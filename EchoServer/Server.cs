@@ -28,11 +28,21 @@ namespace EchoServer
             StreamWriter sw = new StreamWriter(ns);
             sw.AutoFlush = true; //enables automatic flushing
 
-            string message = sr.ReadLine();
+
+            while (true)
+            {
+                string message = sr.ReadLine();
 
             Console.WriteLine("received message: " + message);
             if (message != null)
                 sw.WriteLine(message.ToUpper());
+
+            if (message.ToLower() == "luk")
+            {
+                break;
+            }
+            }
+            
 
             ns.Close();
             Console.WriteLine("net stream closed");
