@@ -13,8 +13,8 @@ namespace EchoServer
         {
             Console.WriteLine("starting echo biatch");
 
-            TcpListener serverSocket = new TcpListener(IPAddress.Loopback, 7777); // til lokal/egen forbindelse.
-            //TcpListener serverSocket = new TcpListener(7777); // ingen IP angivet, modtager fra alle.
+            //TcpListener serverSocket = new TcpListener(IPAddress.Loopback, 7777); // til lokal/egen forbindelse.
+            TcpListener serverSocket = new TcpListener(7777); // ingen IP angivet, modtager fra alle.
 
             // Start server
             serverSocket.Start();
