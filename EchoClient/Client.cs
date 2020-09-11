@@ -10,7 +10,7 @@ namespace EchoClient
 {
     class Client
     {
-        public static void Start()
+        public static void Start() //test comment
         {
             TcpClient socket = null;
 
