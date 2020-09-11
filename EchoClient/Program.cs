@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace EchoClient
 {
@@ -6,7 +7,7 @@ namespace EchoClient
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Client.Start();
         }
     }
 }
